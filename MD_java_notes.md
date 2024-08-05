@@ -14,6 +14,9 @@ int answer = (num1 == num2) ? 1 : -1;
 짝수홀수 가릴때 많이 쓸듯
  answer[num_list[i] % 2]++;
 
+
+배열 중간 인덱스
+ int midIndex = array.length / 2;  
     
 문자열 메소드
 
@@ -39,9 +42,13 @@ a= a.replaceAll("대한", "민국");
 
 Arrays.sort()
 배열 오름차순 정렬
+import java.util.*;
    public int solution(int[] numbers) {
         Arrays.sort(numbers);
         }
         
+        
 length 와 length() 차이 
+length는 배열의 크기
+length()는 문자열의 크기
 --------------------------------------------------------------------
