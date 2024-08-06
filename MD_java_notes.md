@@ -46,9 +46,44 @@ import java.util.*;
    public int solution(int[] numbers) {
         Arrays.sort(numbers);
         }
-        
+반환할때 void라
+int[] tmp = Arrays.copyOf(array, array.length); // array 복사본 생성
+Arrays.sort(tmp); // 복사본 정렬
+이거 같이 써주면 좋음
+
+
+Arrays.copyOf(배열,길이)
+배열의 길이만큼 복사함
+int[] tmp = Arrays.copyOf(array, array.length); 
+Arrays.sort(tmp); 
+
         
 length 와 length() 차이 
 length는 배열의 크기
 length()는 문자열의 크기
+
+
+String.toCharArray()
+문자열을 한 글자씩 쪼개서 char타입의 배열에 집어넣어주는 메소드이다.
+  String s1 = "Hello World";
+  char[] charArr = s1.toCharArray();
+  
+  
+Character.getNumericValue() 
+메소드는 Unicode의 값을 int value로 반환한다.  
+        for(char ch : str.toCharArray()) {
+            answer += Character.getNumericValue(ch);
+        }
+        
+
+String substring(int index)
+문자열을 자르는 함수
+for (int i = code; i <= cipher.length(); i = i + code) {
+        answer += cipher.substring(i - 1, i);
+}
+*빈 문자열에 그냥 더해서 넣어도 문자열 됨*
+
+
+*char형의 변수에서 정수를 더하거나 빼면 결과는 int형으로 반환됩니다.* 
+        
 --------------------------------------------------------------------
