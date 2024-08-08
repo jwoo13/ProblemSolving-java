@@ -1,6 +1,8 @@
 # [알고리즘 Java 정리 노트 / ps(problem solving) 필기]
 **- PS process:&nbsp;&nbsp;프로그래머스 입문 100문제 -**
 ```
+**(별)이게 있다는 건 좀 중요하다는 뜻
+
 
 삼항연산자
 int answer = (num1 == num2) ? 1 : -1;
@@ -39,12 +41,16 @@ contains()
 - 대/소문자를 구분한다.
 str1.contains(str2) ? 1: 2);
 
-
+v
 replace()
 Replace 함수는 자신이 바꾸고싶은 문자로 문자열을 치환시켜주는 기능을 합니다.
 String a = "무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 ";	
 //replaceAll([정규식],[바꿀문자])
 a= a.replaceAll("대한", "민국");
+
+??.equals(문자열)
+문자열 맞는지 틀린지 비교할때 위의 코드 잊지 말기
+예)direction.equals("left")
 
 
 Arrays.sort()
@@ -57,6 +63,21 @@ import java.util.*;
 int[] tmp = Arrays.copyOf(array, array.length); // array 복사본 생성
 Arrays.sort(tmp); // 복사본 정렬
 이거 같이 써주면 좋음
+글고 반환할땐
+        Arrays.sort(answer);
+        return answer;
+이런식으로 나눠서 코딩해야함 
+        ***return Arrays.sort(answer);***
+이렇게는 못함
+
+
+my_string.toLowerCase()
+my_string.toUpperCase()
+Lower은 대문자를 소문자로
+Upper은 소문자를 대문자로
+        String answer = "";
+        answer = my_string.toLowerCase();
+
 
 
 Arrays.copyOf(배열,길이)
@@ -65,12 +86,20 @@ int[] tmp = Arrays.copyOf(array, array.length);
 Arrays.sort(tmp); 
 
 
+indexOf(int i)
+indexOf(String s)
+특정 문자나 문자열에서 해당하는  문자의 인덱스 값을 반환하고
+찾지 못했을 경우 '-1' 을 반환하는 메소드
+int index = numstr.indexOf(kstr);
+        
+
+
 ***valueOf()***
 valueOf 메소드는 괄호 안의 해당 객체를 String 객체로 변환시키는
  역활을 한다. String의 객체로 형변환이다.
 int a = 5;
 String b = String.valueOf(a);
- 
+
 
 charAt(i)
 String 타입의 데이터(문자열)에서 특정 문자를 char 타입으로 
@@ -85,7 +114,7 @@ length는 배열의 크기
 length()는 문자열의 크기
 
 
-String.toCharArray()
+String.toCharArray()***
 문자열을 한 글자씩 쪼개서 char타입의 배열에 집어넣어주는 메소드이다.
   String s1 = "Hello World";
   char[] charArr = s1.toCharArray();
@@ -134,5 +163,23 @@ append()
    sb.append((c + "").repeat(n));
  여기서 c + ""는 문자열로 반환해주고
  만약 ""가 없으면 char형이 반환됨 그래서 repeat도 이 코드에선 못씀
+
+
+append()
+문자열을 인수에 전달한 후 문자열의 지정된 인덱스에 추가
+ System.out.println(strr.insert(4, "Script"));
+************************************
+주의할점 만약 예를 들어 0 인덱스에 반복문을 통해 계속 추가하면 원래 있던 
+값들은 오른쪽으로 즉 인덱스 값들이 증가하면서 옮겨짐
+        while(age>0){
+            sb.insert(0,(char)((age % 10)+(int)'a'));
+            
+        }
+여기서 sb 빈 문자열에 0인덱스에 계속 넣으면 원래 있던 값들은 오른쪽으로
+옮겨짐
+***************************************
+
+
+
 
 --------------------------------------------------------------------
