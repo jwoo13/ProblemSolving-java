@@ -69,7 +69,8 @@ Arrays.sort(tmp); // 복사본 정렬
 이런식으로 나눠서 코딩해야함 
         ***return Arrays.sort(answer);***
 이렇게는 못함
-
+Arrays.sort(arr, Collections.reverseOrder());
+안에 인자를 이런식으로 넣으면 내림차순 정렬이라함
 
 my_string.toLowerCase()
 my_string.toUpperCase()
@@ -165,7 +166,7 @@ append()
  만약 ""가 없으면 char형이 반환됨 그래서 repeat도 이 코드에선 못씀
 
 
-append()
+insert()
 문자열을 인수에 전달한 후 문자열의 지정된 인덱스에 추가
  System.out.println(strr.insert(4, "Script"));
 ************************************
