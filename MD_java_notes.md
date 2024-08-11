@@ -93,6 +93,13 @@ indexOf(String s)
 찾지 못했을 경우 '-1' 을 반환하는 메소드
 int index = numstr.indexOf(kstr);
         
+split()
+문자열을 자르는 메소드 split()
+문자열 String 을 특정 문자로 자를때 사용할 수 있는 메소드
+공백으로 문자열을 자를때, split(" ") 으로 자르면 되지만,
+ 문자열이 끝나고 마지막에 붙는 공백은 얻어지지 않는다.
+String[] word = letter.split(" ");
+
 
 
 ***valueOf()***
