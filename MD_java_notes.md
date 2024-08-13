@@ -41,7 +41,7 @@ contains()
 - 대/소문자를 구분한다.
 str1.contains(str2) ? 1: 2);
 
-v
+
 replace()
 Replace 함수는 자신이 바꾸고싶은 문자로 문자열을 치환시켜주는 기능을 합니다.
 String a = "무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 ";	
@@ -51,7 +51,8 @@ a= a.replaceAll("대한", "민국");
 ??.equals(문자열)
 문자열 맞는지 틀린지 비교할때 위의 코드 잊지 말기
 예)direction.equals("left")
-
+st[i].equals("Z")
+꼭 문자열에 문자열 비교할때 써야함
 
 Arrays.sort()
 배열 오름차순 정렬
@@ -93,6 +94,7 @@ indexOf(String s)
 찾지 못했을 경우 '-1' 을 반환하는 메소드
 int index = numstr.indexOf(kstr);
         
+        
 split()
 문자열을 자르는 메소드 split()
 문자열 String 을 특정 문자로 자를때 사용할 수 있는 메소드
@@ -114,6 +116,15 @@ aAb1B2cC34oOp 이런 문자열이 주어지고 자른다면
 
 Integer.parseInt(s[i]);
 이거는 기본적으로 문자열을 정수형으로 바꿔주는 코드
+또 다른 코드로
+Integer.parseInt()
+10진수를 2진수로 바꿔주는 역할을 함
+2자리에 8을 넣으면 8진수, 16을 넣으면 16진수로 바꿀 수 있음
+String s = "110";
+int n = Integer.parseInt(s, 2);
+System.out.print(n);
+// output: 6
+
 
 
 ***valueOf()***
@@ -206,6 +217,13 @@ insert()
 옮겨짐
 ***************************************
 
+
+Integer.toBinaryString()
+10진수를 2진수로 바꿔주는 역할
+int n = 23
+String s = Integer.toBinaryString(n);
+System.out.print(s);
+// output: 10111
 
 
 
