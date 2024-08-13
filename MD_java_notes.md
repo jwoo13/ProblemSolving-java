@@ -101,6 +101,7 @@ split()
 공백으로 문자열을 자를때, split(" ") 으로 자르면 되지만,
  문자열이 끝나고 마지막에 붙는 공백은 얻어지지 않는다.
 String[] word = letter.split(" ");
+
 "[0-9]"이거는 숫자로 쪼개라
 "[^0-9]"이거는 숫자를 제외한 걸로 쪼개라
 "[^0-9+]"는 하나 이상의 연속된 문자를 의미.
@@ -228,3 +229,13 @@ System.out.print(s);
 
 
 --------------------------------------------------------------------
+신박한 풀이
+    public long solution(int balls, int share) {
+       long answer = 0;
+
+        int d = (balls - share) > share ? share : balls - share;
+        if (d == 0) return 1;
+
+        return solution(balls - 1, d - 1) * balls / d;
+    }
+서로 다른 n개 중 m개를 뽑는 경우의 수 공식
