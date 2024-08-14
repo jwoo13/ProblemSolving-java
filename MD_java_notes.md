@@ -33,6 +33,10 @@ for (int i = 1; i <= n; i++) {
 length( ) 메소드는 문자열의 길이(문자의 수)를 리턴합니다.
 String subject = "자바 프로그래밍";
 int length = subject.length();
+2차원 배열이면 [ [1,2] , [3,4,5] ,[5,6] ]
+이런식에서 length 쓰면 행값이 나옴 즉 3이 출력
+만약 s[0].length를 쓰면 2가 나옴 
+만약 s[1].length를 쓰면 3가 나옴 
 
 
 contains()
@@ -239,3 +243,17 @@ System.out.print(s);
         return solution(balls - 1, d - 1) * balls / d;
     }
 서로 다른 n개 중 m개를 뽑는 경우의 수 공식
+
+
+for (int i = 0; i < sum.length; i++) {
+            count = 1;
+            for (int j = 0; j < sum.length; j++){
+                if(sum[i]<sum[j]){
+                    count++;
+                }
+            }
+            answer[i] = count;
+        }
+배열 안에서 큰값 구하는 방법 이중 for문 생각해보기 유용하게 쓰일듯
+sort만 쓰지말고 위의 코드는 배열 값들의 큰 값 순서대로 순위를 매김 
+특히 같은 값이면 같은 순위가 매기는걸 봐야함
