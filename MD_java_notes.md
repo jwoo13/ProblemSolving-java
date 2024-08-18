@@ -231,6 +231,10 @@ System.out.print(s);
 // output: 10111
 
 
+Math.abs 절대값
+Math.max 큰거 구하기
+Math.min 작은거 구하기
+
 
 --------------------------------------------------------------------
 신박한 풀이
@@ -258,3 +262,15 @@ for (int i = 0; i < sum.length; i++) {
 배열 안에서 큰값 구하는 방법 이중 for문 생각해보기 유용하게 쓰일듯
 sort만 쓰지말고 위의 코드는 배열 값들의 큰 값 순서대로 순위를 매김 
 특히 같은 값이면 같은 순위가 매기는걸 봐야함
+
+
+
+class Solution {
+    public int solution(String A, String B) {
+        return (B+B).indexOf(A);
+    }
+}
+문자열을 민다고 정의한다면 문자열 A와 B가 매개변수로 주어질 때, 
+A를 밀어서 B가 될 수 있다면 밀어야 하는 최소 횟수를 return하고 
+밀어서 B가 될 수 없으면 -1을 return
+
