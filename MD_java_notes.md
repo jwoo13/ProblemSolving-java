@@ -277,3 +277,17 @@ class Solution {
 A를 밀어서 B가 될 수 있다면 밀어야 하는 최소 횟수를 return하고 
 밀어서 B가 될 수 없으면 -1을 return
 
+
+int start = (total - (num * (num - 1)) / 2) / num;
+연속된 수의 첫 번째 값을 찾기 위한 공식
+
+
+
+ for (int i = Math.min(answer[0], answer[1]); i > 1; i--) {
+            if (answer[0] % i == 0 && answer[1] % i == 0) {
+                answer[0] = answer[0] / i;
+                answer[1] = answer[1] / i;
+                break; // 최대 약수로 나누면 바로 종료
+            }
+        }
+GCD 공식 모르는 상태에서 쓸만한 코드
