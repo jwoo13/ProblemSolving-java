@@ -237,8 +237,8 @@ System.out.print(s);
 Math.abs 절대값
 Math.max 큰거 구하기
 Math.min 작은거 구하기
-
-
+Math.sqrt(16) 루트 씌우기
+Math.pow(2, 4) 2의 4승 이런함수
 --------------------------------------------------------------------
 신박한 풀이
     public long solution(int balls, int share) {
