@@ -53,6 +53,7 @@ String a = "무궁화 삼천리 화려강산 대한사람 대한으로 길이 �
 a= a.replaceAll("대한", "민국");
 
 
+
 ??.equals(문자열)
 문자열 맞는지 틀린지 비교할때 위의 코드 잊지 말기
 예)direction.equals("left")
