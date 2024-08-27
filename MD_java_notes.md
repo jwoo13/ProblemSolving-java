@@ -294,4 +294,3 @@ int start = (total - (num * (num - 1)) / 2) / num;
         }
 GCD 공식 모르는 상태에서 쓸만한 코드
 
-
