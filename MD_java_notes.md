@@ -81,6 +81,7 @@ Arrays.sort(arr, Collections.reverseOrder());
 안에 인자를 이런식으로 넣으면 내림차순 정렬이라함
 
 
+
 my_string.toLowerCase()
 my_string.toUpperCase()
 Lower은 대문자를 소문자로
