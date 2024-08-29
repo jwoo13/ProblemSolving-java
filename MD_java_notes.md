@@ -294,3 +294,8 @@ int start = (total - (num * (num - 1)) / 2) / num;
         }
 GCD 공식 모르는 상태에서 쓸만한 코드
 
+
+public static int lcm(int a, int b) {
+        return Math.abs(a * b) / gcd(a, b);
+    }
+최소공배수를 구하는법은 주어진값들 곱하고 최대공약수로 나누면 됨
