@@ -39,7 +39,7 @@ int length = subject.length();
 만약 s[1].length를 쓰면 3가 나옴 
 
 
-contains()
+ 
 -boolean contains(CharSequence s)
 -contains()함수는 대상 문자열에 특정 문자열이 포함되어 있는지 확인하는 함수이다.
 - 대/소문자를 구분한다.
@@ -293,3 +293,4 @@ int start = (total - (num * (num - 1)) / 2) / num;
             }
         }
 GCD 공식 모르는 상태에서 쓸만한 코드
+
